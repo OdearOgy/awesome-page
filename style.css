@@ -1,0 +1,145 @@
+@font-face {
+  font-family: awesomeFont;
+  src: url('/assets/fonts/saker_sans_black.ttf');
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: awesomeFont;
+}
+
+::-webkit-scrollbar {
+    width: calc(100% - 99.9%);
+    background: transparent;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  visibility: hidden;
+    width: 2px;
+    height: 2px;
+    background: rgba(203, 82, 86, 1);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  visibility: visible;
+}
+
+main {
+  background: url('/assets/img/be.jpg') center / 100% no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.guide, .interaction {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+}
+
+.steps {
+  text-align: center;
+}
+
+
+.guide {
+  top: 30%;
+  transform: translate(-50%, -70%);
+}
+
+.guide h1 {
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-shadow: 3px 1px 4px rgba(247, 176, 130, 1),
+                1px 3px 4px rgba(247, 176, 130, 1),
+                -3px 1px 4px rgba(247, 176, 130, 1),
+                1px -3px 4px rgba(247, 176, 130, 1);
+  color: rgba(215, 95, 95, 1);
+}
+
+.steps h2 {
+  font-size: 6em;
+  letter-spacing: 20px;
+  font-weight: 500;
+  color: rgb(0, 66, 195);
+  text-shadow: 1px 2px 5px rgba(91, 250, 12, 1),
+                2px 1px 5px rgba(91, 250, 12, 1),
+                -2px 1px 5px rgba(91, 250, 12, 1),
+                1px -2px 5px rgba(91, 250, 12, 1);
+
+}
+.guide p, .interaction p {
+  font-size: 2.2em;
+  font-weight: 400;
+  letter-spacing: 8px;
+  color: rgba(106, 161, 133, 1);
+  text-shadow: 3px 1px 1px rgba(213, 231, 5, 1),
+                1px 3px 1px rgba(213, 231, 5, 1),
+                -3px 1px 1px rgba(213, 231, 5, 1),
+                1px -3px 1px rgba(213, 231, 5, 1);
+}
+
+.interaction {
+  top: 80%;
+  transform: translate(-50%, -25%);
+}
+
+.interaction p {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.interaction button {
+  text-align: center;
+  padding: 10px 30px;
+  background: transparent;
+  border: 1px solid black;
+  margin-top: 30px;
+  font-size: 2em;
+  letter-spacing: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.interaction button:hover {
+  background: rgba(173, 171, 171, 1);
+  border-color: rgba(173, 171, 171, 1);
+  color: rgba(215, 95, 95, 1);
+  text-shadow: 3px 1px 4px rgba(247, 176, 130, 1),
+                1px 3px 4px rgba(247, 176, 130, 1),
+                -3px 1px 4px rgba(247, 176, 130, 1),
+                1px -3px 4px rgba(247, 176, 130, 1);
+  transition: all .5s ease;
+}
+
+.interaction button:active {
+  transform: scale(1.1);
+  transition: all .2s ease;
+}
+
+.interaction button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.hidden-div {
+  height: 100vh;
+  background: url('/assets/img/be-loved1.jpg') center / 100% no-repeat;
+  position: relative;
+}
+
+.hidden-div p {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+
+}
