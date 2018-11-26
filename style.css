@@ -1,6 +1,6 @@
 @font-face {
   font-family: awesomeFont;
-  src: url('/assets/fonts/saker_sans_black.ttf');
+  src: url('assets/fonts/saker_sans_black.ttf');
 
 }
 
@@ -31,7 +31,7 @@
 }
 
 main {
-  background: url('/assets/img/be.jpg') center / 100% no-repeat;
+  background: url('assets/img/be-awesome.jpg') center / 100% no-repeat;
   height: 100vh;
   position: relative;
 }
@@ -131,7 +131,7 @@ main {
 
 .hidden-div {
   height: 100vh;
-  background: url('/assets/img/be-loved1.jpg') center / 100% no-repeat;
+  background: url('assets/img/be-loved.jpg') center / 100% no-repeat;
   position: relative;
 }
 
