@@ -1,6 +1,7 @@
 @font-face {
   font-family: awesomeFont;
-  src: url('assets/fonts/saker_sans_black.ttf');
+  font-display: auto;
+  src: url('./assets/fonts/saker_sans_black.ttf');
 
 }
 
@@ -9,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: awesomeFont;
+  font-family: awesomeFont, arial;
 }
 
 ::-webkit-scrollbar {
@@ -31,7 +32,7 @@
 }
 
 main {
-  background: url('assets/img/be-awesome.jpg') center / 100% no-repeat;
+  background: url('./assets/img/be-awesome.jpg') center / 100% no-repeat;
   height: 100vh;
   position: relative;
 }
@@ -123,7 +124,7 @@ main {
   transition: all .2s ease;
 }
 
-.interaction button a {
+.interaction button a, .hidden-div h2 a {
   text-decoration: none;
   color: inherit;
 }
@@ -131,15 +132,37 @@ main {
 
 .hidden-div {
   height: 100vh;
-  background: url('assets/img/be-loved.jpg') center / 100% no-repeat;
+  background: url('./assets/img/be-loved.jpg') center / 100% no-repeat;
   position: relative;
 }
 
 .hidden-div p {
   text-align: center;
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -85%);
+  font-size: 3em;
+  letter-spacing: 10px;
+  color: rgba(1, 142, 245, 1);
+  text-shadow: 1px 2px 4px rgba(133, 38, 93, 1),
+                2px 1px 4px rgba(133, 38, 93, 1),
+                -1px -2px 4px rgba(133, 38, 93, 1),
+                -2px -1px 4px rgba(133, 38, 93, 1);
+}
 
+.hidden-div h2 {
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 3em;
+  letter-spacing: 10px;
+  font-weight: 300;
+  color: rgba(246, 31, 31, 0.94);
+  text-shadow: 5px 2px 4px rgba(218, 217, 98, 1),
+                2px 5px 4px rgba(218, 217, 98, 1),
+                -5px 2px 4px rgba(218, 217, 98, 1),
+                2px -5px 4px rgba(218, 217, 98, 1);
 }
