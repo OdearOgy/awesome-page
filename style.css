@@ -96,8 +96,6 @@ main {
 }
 
 .interaction button {
-  text-align: center;
-  padding: 10px 30px;
   background: transparent;
   border: 1px solid black;
   margin-top: 30px;
@@ -105,6 +103,11 @@ main {
   letter-spacing: 5px;
   cursor: pointer;
   outline: none;
+}
+
+.interaction button a {
+  text-align: center;
+  padding: 10px 30px;
 }
 
 .interaction button:hover {
@@ -126,6 +129,7 @@ main {
 .interaction button a, .hidden-div h2 a {
   text-decoration: none;
   color: inherit;
+  
 }
 
 
