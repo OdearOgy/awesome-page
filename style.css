@@ -31,7 +31,7 @@
 }
 
 main {
-  background: url('./assets/img/be-awesome.jpg') center / 100% no-repeat;
+  background: url('./assets/img/be-awesome.jpg') center / cover no-repeat;
   height: 100vh;
   position: relative;
 }
@@ -105,6 +105,7 @@ main {
   letter-spacing: 5px;
   cursor: pointer;
   outline: none;
+  transform: scale(1);
 }
 
 .interaction button a {
@@ -121,10 +122,11 @@ main {
                 -3px 1px 4px rgba(247, 176, 130, 1),
                 1px -3px 4px rgba(247, 176, 130, 1);
   transition: all .5s ease;
+  transform: scale(1.1)
 }
 
 .interaction button:active {
-  transform: scale(1.1);
+  transform: scale(1);
   transition: all .2s ease;
 }
 
@@ -137,7 +139,7 @@ main {
 
 .hidden-div {
   height: 100vh;
-  background: url('./assets/img/be-loved.jpg') center / 100% no-repeat;
+  background: url('./assets/img/be-loved.jpg') center / cover no-repeat;
   position: relative;
 }
 
@@ -170,4 +172,75 @@ main {
                 2px 5px 4px rgba(218, 217, 98, 1),
                 -5px 2px 4px rgba(218, 217, 98, 1),
                 2px -5px 4px rgba(218, 217, 98, 1);
+}
+
+
+@media (max-width: 1200px) {
+
+   .guide h1 {
+    font-size: 2.5rem;
+  }
+
+  .steps h2 {
+    font-size: 4.5em;
+    padding: 10px 15px
+  }
+
+
+  .guide p, .interaction p {
+    font-size: 2em;
+  }
+
+  .interaction button {
+    font-size: 1.9em;
+  }
+
+
+  .hidden-div p {
+    font-size: 2.8em;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hidden-div h2 {
+    font-size: 2.2em;
+  }
+
+}
+
+@media (max-width: 414px) {
+  .guide h1 {
+    font-size: 1.2rem;
+  }
+
+  .steps h2 {
+    font-size: 1.5em;
+  }
+
+  .guide p, .interaction p {
+    font-size: 1em;
+  }
+
+  .interaction button {
+    font-size: .9em;
+  }
+
+
+  .hidden-div {
+    background-size: cover;
+  }
+
+
+  .hidden-div p {
+    font-size: 1.8em;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hidden-div h2 {
+    font-size: 1.2em;
+  }
+
 }
